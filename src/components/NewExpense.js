@@ -21,6 +21,7 @@ const NewExpense = (props) => {
   const submitHandler = (event) => {
     event.preventDefault();
     const expenseData = {
+      id: Math.random() ,
       title: enteredTitle,
       amount: enteredAmount,
       date: new Date(enteredDate),
